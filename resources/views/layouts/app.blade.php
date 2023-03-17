@@ -9,6 +9,10 @@
 <body>
     <div class="app">
         @yield('content')
+        <form action="{{ route('logout') }}" method="post">
+        @csrf
+        <button type="submit">Logout</button>
+        </form>
     </div>
 </body>
 </html>
